@@ -50,7 +50,7 @@ def submit():
             db.session.add(data)
             db.session.commit()
             return render_template('success.html')
-        return render_template('index.html', message='You have already submitted feedback')
+        return render_template('index.html', message='Your feedback is already received')
 
 
 if __name__ == '__main__':
